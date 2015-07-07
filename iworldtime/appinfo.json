@@ -1,0 +1,83 @@
+{
+  "uuid": "51616af5-2af4-4d43-800f-a5b4df1b56b0",
+  "shortName": "iWT",
+  "longName": "iWorldTime",
+  "companyName": "Don Krause",
+  "versionCode": 3,
+  "versionLabel": "3.0",
+  "watchapp": {
+    "watchface": false
+  },
+ "targetPlatforms": [
+  "aplite",
+  "basalt"
+  ],
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "WEATHER_UNKNOWN",
+        "file": "images/Unknown.png"
+      },
+      {
+        "type": "png",
+        "name": "WEATHER_CLEAR_DAY",
+        "file": "images/ClearDay.png"
+      },
+      {
+        "type": "png",
+        "name": "WEATHER_CLEAR_NIGHT",
+        "file": "images/ClearNight.png"
+      },
+      {
+        "type": "png",
+        "name": "WEATHER_RAIN",
+        "file": "images/Rain.png"
+      },
+      {
+        "type": "png",
+        "name": "WEATHER_CLOUDY",
+        "file": "images/Cloudy.png"
+      },
+      {
+        "type": "png",
+        "name": "WEATHER_PARTLY_CLOUDY_DAY",
+        "file": "images/PartlyCloudyDay.png"
+      },
+      {
+        "type": "png",
+        "name": "WEATHER_PARTLY_CLOUDY_NIGHT",
+        "file": "images/PartlyCloudyNight.png"
+      },
+      {
+        "type": "png",
+        "name": "WEATHER_WIND",
+        "file": "images/Wind.png"
+      },
+      {
+        "type": "png",
+        "name": "WEATHER_SNOW",
+        "file": "images/Snow.png"
+      },
+      {
+        "type": "png",
+        "name": "WEATHER_FOG",
+        "file": "images/Fog.png"
+      },
+      {
+        "menuIcon": true,
+        "type": "png",
+        "name": "ICON",
+        "file": "images/worldmapicon.png"
+      }
+    ]
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
+}
