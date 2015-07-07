@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A8914C60-539F-405A-BFC1-096021FAE2B4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PebbleWorldTime</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2C26383A1CE98EBCDC01FFC6B24CC84F12D0C153</key>
+		<string>https://github.com/dkkrause</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PebbleWorldTime.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2C26383A1CE98EBCDC01FFC6B24CC84F12D0C153</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dkkrause</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2C26383A1CE98EBCDC01FFC6B24CC84F12D0C153</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2C26383A1CE98EBCDC01FFC6B24CC84F12D0C153</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PebbleWorldTime</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zur-h3-1l4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="lww-Ub-2Vj">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="zur-h3-1l4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0yv-QY-hZj">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="z2R-Rj-CRQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SL8-YA-pf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-725" y="-129"/>
+        </scene>
+        <!--Pebble World Time-->
+        <scene sceneID="11">
+            <objects>
+                <viewController id="2" customClass="PWTimeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zbx-Xn-0Pw"/>
+                        <viewControllerLayoutGuide type="bottom" id="rVR-IZ-s8n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="16">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jZ6-yk-uKK">
+                                <rect key="frame" x="9" y="200" width="303" height="323"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DL-hY-YMp">
+                                <rect key="frame" x="242" y="532" width="70" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateWatchData:" destination="2" eventType="touchUpInside" id="Xf2-ns-l9B"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="msO-sj-OmK">
+                                <rect key="frame" x="53" y="531" width="51" height="31"/>
+                                <connections>
+                                    <action selector="trackLocationChanges:" destination="2" eventType="valueChanged" id="F3O-6n-iAF"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Live" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65Y-mX-MdX">
+                                <rect key="frame" x="9" y="531" width="41" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uI8-nx-acB">
+                                <rect key="frame" x="9" y="157" width="303" height="29"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Dark" width="100.33333333333333"/>
+                                    <segment title="Light" width="100.33333333333333"/>
+                                    <segment title="Suns" width="100.33333333333333"/>
+                                </segments>
+                                <connections>
+                                    <action selector="clockBackgroundSegmentSelected:" destination="2" eventType="valueChanged" id="hUh-fW-whH"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LYF-jY-y9p">
+                                <rect key="frame" x="9" y="116" width="303" height="29"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Watch Config"/>
+                                    <segment title="12-Hour"/>
+                                    <segment title="24-Hour"/>
+                                </segments>
+                                <connections>
+                                    <action selector="timeDisplayChanged:" destination="2" eventType="valueChanged" id="Cyr-bc-GyT"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kr2-IQ-sqP">
+                                <rect key="frame" x="9" y="75" width="303" height="29"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Local"/>
+                                    <segment title="TZ 1"/>
+                                    <segment title="TZ 2"/>
+                                </segments>
+                                <connections>
+                                    <action selector="clockSelected:" destination="2" eventType="valueChanged" id="rr6-fd-hf7"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tracking: Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkW-yJ-VIM">
+                                <rect key="frame" x="107" y="536" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.875" green="0.063016399319999999" blue="0.1146325029" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TZ1" id="7"/>
+                    <navigationItem key="navigationItem" title="Pebble World Time" id="fRE-qW-KzK"/>
+                    <connections>
+                        <outlet property="clockBackground" destination="uI8-nx-acB" id="7PG-cK-cc4"/>
+                        <outlet property="clockDisplay" destination="LYF-jY-y9p" id="BEF-Zf-eyp"/>
+                        <outlet property="clockSelect" destination="kr2-IQ-sqP" id="YTe-me-eNn"/>
+                        <outlet property="smallMap" destination="jZ6-yk-uKK" id="Mns-D7-Mh9"/>
+                        <outlet property="trackGPSUpdates" destination="msO-sj-OmK" id="FHs-pb-qFc"/>
+                        <outlet property="tracking" destination="HkW-yJ-VIM" id="G3Q-Y2-rgO"/>
+                        <outlet property="view" destination="16" id="NbJ-D4-z7F"/>
+                        <segue destination="cvO-8d-wAC" kind="push" identifier="toMap" id="7F8-CE-iyJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="-129"/>
+        </scene>
+        <!--Select TZ Location-->
+        <scene sceneID="yFk-eb-wJT">
+            <objects>
+                <viewController id="cvO-8d-wAC" customClass="PWMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bJ7-bU-aR9"/>
+                        <viewControllerLayoutGuide type="bottom" id="6U3-cN-TRX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wKb-sh-aaW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="d1a-fb-AGd">
+                                <rect key="frame" x="0.0" y="65" width="320" height="459"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frf-1t-qVp">
+                                <rect key="frame" x="116" y="532" width="89" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Center Pin">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="centerMap:" destination="cvO-8d-wAC" eventType="touchUpInside" id="1xf-YE-Nsa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select TZ Location" id="uhx-iK-GeP">
+                        <barButtonItem key="backBarButtonItem" title="Return" id="h3f-ag-kH3"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bigMap" destination="d1a-fb-AGd" id="aeX-1a-V0c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnW-Sf-d1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="-129"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
