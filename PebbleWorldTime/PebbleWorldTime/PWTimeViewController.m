@@ -332,7 +332,7 @@ NSMutableDictionary *update;
 #ifdef PWDEBUG
         NSLog(@"updateWeatherNSURLSession: Last known location for watch: %@, latitude: %3.8f, %3.8f\n", clock, [clock.latitude floatValue], [clock.longitude floatValue]);
 #endif
-        NSString *forecastrUrl = @"https://api.forecast.io/forecast/dca83481ebc0ca536287990e36c32aa8/";
+        NSString *forecastrUrl = @"https://api.forecast.io/forecast/fiokeyhere/";
         forecastrUrl = [forecastrUrl stringByAppendingFormat:@"%@,%@", [clock.latitude stringValue], [clock.longitude stringValue]];
 #ifdef PWDEBUG
         NSLog(@"updateWeatherNSURLSession forecastURL: %@", forecastrUrl);

@@ -12,6 +12,8 @@
 	<dict>
 		<key>2C26383A1CE98EBCDC01FFC6B24CC84F12D0C153</key>
 		<string>https://github.com/dkkrause</string>
+		<key>B30255CA868AB827037647F65AE4C87DC0656C1C</key>
+		<string>github.com:dkkrause/pebble-dev.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>PebbleWorldTime.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>2C26383A1CE98EBCDC01FFC6B24CC84F12D0C153</key>
 		<string>..</string>
+		<key>B30255CA868AB827037647F65AE4C87DC0656C1C</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/dkkrause</string>
@@ -28,6 +32,14 @@
 	<string>2C26383A1CE98EBCDC01FFC6B24CC84F12D0C153</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B30255CA868AB827037647F65AE4C87DC0656C1C</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
